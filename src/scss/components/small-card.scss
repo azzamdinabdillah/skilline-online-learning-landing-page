@@ -1,0 +1,48 @@
+.small-card{
+    background-color: rgba($color: white, $alpha: 0.7);
+    // width: 300px;
+    // height: 100px;
+    // width: 100px;
+    // height: 100px;
+    padding: 18px 18px;
+    border-radius: 10px;
+    @include a.simple-flex(12px);
+    flex-wrap: wrap;
+    max-width: 300px;
+    backdrop-filter: blur(3px);
+    opacity: 1;
+    transform: scale(0.7);
+    z-index: 1;
+
+    img{
+        // width: 50px;
+        // height: 50px;
+        width: 35px;
+        height: 35px;
+    }
+
+    div{
+        // position: relative;
+        // z-index: 2;
+        // color: rgba(255, 255, 255, 0.8);
+        h1{
+            @include a.text-style(
+                700,
+                18px,
+                25px,
+                a.$brown-color,
+                a.$nunito-font,
+            );
+        }
+
+        p{
+            @include a.text-style(
+                600,
+                15px,
+                20px,
+                #545567,
+                a.$nunito-font,
+            );
+        }
+    }
+}

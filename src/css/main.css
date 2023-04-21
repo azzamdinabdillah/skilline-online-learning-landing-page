@@ -1,0 +1,337 @@
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.hero-section .container {
+  max-width: 1920px;
+  min-height: 700px;
+  background-color: #FFF2E1;
+}
+.hero-section .container .hero-img {
+  overflow: hidden;
+  max-width: 911px;
+  min-height: 300px;
+  position: relative;
+}
+.hero-section .container .hero-img .children-image {
+  max-width: 250px;
+  min-height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.hero-section .container .hero-img .assisted-student {
+  position: absolute;
+  top: 92px;
+  left: -1rem;
+}
+.hero-section .container .hero-img .assisted-student .small-card {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 18px 18px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  max-width: 300px;
+  backdrop-filter: blur(3px);
+  opacity: 1;
+  transform: scale(0.7);
+  z-index: 1;
+}
+.hero-section .container .hero-img .assisted-student .small-card img {
+  width: 35px;
+  height: 35px;
+}
+.hero-section .container .hero-img .assisted-student .small-card div h1 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #595959;
+  font-family: "Nunito Sans", sans-serif;
+}
+.hero-section .container .hero-img .assisted-student .small-card div p {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  color: #545567;
+  font-family: "Nunito Sans", sans-serif;
+}
+.hero-section .container .hero-img .user-experience {
+  position: absolute;
+  top: 246px;
+  left: -36px;
+}
+.hero-section .container .hero-img .user-experience .small-card {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 18px 18px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  max-width: 300px;
+  backdrop-filter: blur(3px);
+  opacity: 1;
+  transform: scale(0.7);
+  z-index: 1;
+}
+.hero-section .container .hero-img .user-experience .small-card img {
+  width: 35px;
+  height: 35px;
+}
+.hero-section .container .hero-img .user-experience .small-card div h1 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #595959;
+  font-family: "Nunito Sans", sans-serif;
+}
+.hero-section .container .hero-img .user-experience .small-card div p {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  color: #545567;
+  font-family: "Nunito Sans", sans-serif;
+}
+.hero-section .container .hero-img .user-experience button {
+  padding: 8px 62px;
+  background-color: #D8587E;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  display: block;
+  margin: auto;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  color: white;
+  font-family: "Nunito Sans", sans-serif;
+}
+.hero-section .container .hero-img .congratulations {
+  position: absolute;
+  top: 165px;
+  right: -36px;
+}
+.hero-section .container .hero-img .congratulations .small-card {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 18px 18px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  max-width: 300px;
+  backdrop-filter: blur(3px);
+  opacity: 1;
+  transform: scale(0.7);
+  z-index: 1;
+}
+.hero-section .container .hero-img .congratulations .small-card img {
+  width: 35px;
+  height: 35px;
+}
+.hero-section .container .hero-img .congratulations .small-card div h1 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #595959;
+  font-family: "Nunito Sans", sans-serif;
+}
+.hero-section .container .hero-img .congratulations .small-card div p {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  color: #545567;
+  font-family: "Nunito Sans", sans-serif;
+}
+.hero-section .container .hero-img .chart {
+  position: absolute;
+  top: 60px;
+  right: 22px;
+}
+.hero-section .container .hero-img .chart img {
+  width: 80px;
+  height: 80px;
+}
+.hero-section .container .hero-text {
+  padding: 0 15px;
+  margin-top: 20px;
+}
+.hero-section .container .hero-text h1 {
+  width: clamp(18rem, 43vw, 681px);
+  font-weight: 700;
+  font-size: clamp(1.9rem, 2.5vw + 1rem, 54px);
+  line-height: 43px;
+  color: #2F327D;
+  font-family: "Poppins" sans-serif;
+}
+.hero-section .container .hero-text h1 span {
+  color: #F48C06;
+}
+.hero-section .container .hero-text p {
+  margin-top: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #464646;
+  font-family: "Nunito Sans", sans-serif;
+}
+.hero-section .container .hero-text .button-hero-text {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.hero-section .container .hero-text .button-hero-text button {
+  background-color: #F48C06;
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: white;
+  font-family: "Poppins" sans-serif;
+}
+.hero-section .container .hero-text .button-hero-text div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.hero-section .container .hero-text .button-hero-text div img {
+  padding: 12px;
+  border-radius: 50px;
+  background-color: white;
+}
+.hero-section .container .hero-text .button-hero-text div p {
+  font-weight: 800;
+  font-size: 13px;
+  line-height: 20px;
+  color: #252641;
+  font-family: "Poppins" sans-serif;
+}
+.hero-section .container .hero-svg {
+  width: 100vw;
+  display: none;
+}
+@media (min-width: 768px) {
+  .hero-section .container {
+    position: relative;
+    min-height: 300px;
+    padding: 20px 20px 0 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-section .container .hero-img {
+    overflow: visible;
+    width: 350px;
+  }
+  .hero-section .container .hero-img .assisted-student {
+    left: -2.5rem;
+  }
+  .hero-section .container .hero-img .user-experience {
+    top: 225px;
+    left: -50px;
+  }
+  .hero-section .container .hero-img .congratulations {
+    right: -52px;
+  }
+  .hero-section .container .hero-img .chart {
+    right: 6px;
+  }
+  .hero-section .container .hero-text h1 {
+    line-height: 55px;
+  }
+  .hero-section .container .hero-text p {
+    max-width: 325px;
+    margin: 10px 0;
+  }
+  .hero-section .hero-svg {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  .hero-section {
+    position: relative;
+    z-index: 2;
+  }
+  .hero-section .container {
+    gap: 74px;
+    grid-template-columns: repeat(3, 1fr);
+    z-index: 2;
+    position: relative;
+    min-height: 678px;
+  }
+  .hero-section .container .hero-img {
+    grid-column: span 2;
+    z-index: 2;
+    position: relative;
+    width: 453px;
+  }
+  .hero-section .container .hero-img .children-image {
+    padding: 0;
+    max-width: 382px;
+  }
+  .hero-section .container .hero-img .assisted-student {
+    transform: scale(1.4);
+    left: -3rem;
+    top: 9rem;
+  }
+  .hero-section .container .hero-img .user-experience {
+    transform: scale(1.5);
+    top: 366px;
+    left: -144px;
+  }
+  .hero-section .container .hero-img .congratulations {
+    transform: scale(1.4);
+    top: 16rem;
+    right: -3rem;
+  }
+  .hero-section .container .hero-img .chart {
+    transform: scale(1.5);
+    top: 5rem;
+    right: -2rem;
+  }
+  .hero-section .container .hero-text {
+    grid-column: span 1;
+  }
+  .hero-section .container .hero-text h1 {
+    line-height: 73px;
+  }
+  .hero-section .container .hero-text .p-hero-text {
+    margin-top: 34px;
+    font-size: 24px;
+    max-width: 461px;
+    line-height: 40px;
+  }
+  .hero-section .container .hero-text .button-hero-text {
+    margin-top: 52px;
+  }
+  .hero-section .container .hero-text .button-hero-text button {
+    font-size: 24px;
+    padding: 22px 38px;
+  }
+  .hero-section .container .hero-svg {
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    bottom: -90px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  .hero-section .container .hero-svg .path {
+    width: 50% !important;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
