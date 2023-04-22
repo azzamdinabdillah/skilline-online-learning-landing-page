@@ -7,6 +7,7 @@
     box-sizing: border-box;
 }
 
+// HERO SECTION
 .hero-section{
     // position: relative;
     // background-color: black;
@@ -88,7 +89,7 @@
         }
 
         .hero-text{
-            padding: 0 15px;
+            padding: 0 20px;
             margin-top: 20px;
             h1{
                 // width: 338px;
@@ -177,7 +178,8 @@
             justify-content: center;
 
             .hero-img{
-                overflow: visible;
+                // overflow: visible;
+                overflow: hidden;
                 // flex: 1 1 563px;
                 width: 350px;
 
@@ -258,8 +260,8 @@
 
                 .user-experience{
                     transform: scale(1.5);
-                    top: 366px;
-                    left: -144px;
+                    top: 366px; 
+                    left: -104px
                 }
 
                 .congratulations{
@@ -282,17 +284,17 @@
                 }
 
                 .p-hero-text{
-                    margin-top: 34px;
-                    font-size: 24px;
-                    max-width: 461px;
+                    margin-top: 7px;
+                    font-size: 22px;
+                    max-width: 503px;
                     line-height: 40px;
                 }
 
                 .button-hero-text{
-                    margin-top: 52px;
+                    margin-top: 31px;
                     button{
-                        font-size: 24px;
-                        padding: 22px 38px;
+                        font-size: 18px;
+                        padding: 18px 31px;
                     }
                 }
             }
@@ -316,3 +318,257 @@
     }
     // END RESPONSIVE BREAKPOINTS
 }
+// END HERO SECTION
+
+// TRUSTED COMPANY
+.trusted-company{
+    margin-top: 20px;
+
+    .container{
+        width: 100%;
+        min-height: 200px;
+        // background-color: hotpink;
+        @include a.complex-flex();
+        padding: 0 20px;
+
+        .wrapper{
+            h1{
+                text-align: center;
+                @include a.text-style(
+                    500,
+                    16px,
+                    44px,
+                    a.$lightblack-color,
+                );
+            }
+
+            .company-image{
+                // @include a.complex-flex();
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 16px;
+                place-items: center;
+                margin-top: 16px;
+                
+                img{
+                    grid-column: span 1;
+                    width: 80px;
+                }
+            }
+        }
+    }
+
+    // RESPOSIVE BREAKPOINTS
+
+    @media (min-width: 48rem) {
+        .container{
+            .wrapper{
+                h1{
+                    font-size: 13px;
+                }
+
+                .company-image{
+                    grid-template-columns: repeat(6, 1fr);
+                    gap: 27px;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 64rem) {
+        .container{
+            min-height: 300px;
+            
+            .wrapper{
+                h1{
+                    font-size: 23px;
+                }
+
+                .company-image{
+                    gap: 50px;
+                    margin-top: 30px;
+
+                    img{
+                        width: 120px;
+                    }
+                }
+            }
+        }
+    }
+
+    // END RESPONSIVE BREAKPOINTS
+}
+// END TRUSTED COMPANY
+
+// CLOUD SOFTWARE
+.cloud-software{
+    padding-bottom: 200px;
+    margin-top: 20px;
+
+    .container{
+        width: 100%;
+        // min-height: 100px;
+        // background-color: aqua;
+        @include a.complex-flex();
+        padding: 0 25px;
+
+        .wrapper{
+            .title{
+                h1{
+                    text-align: center;
+                    @include a.text-style(
+                        700,
+                        20px,
+                        inherit,
+                        a.$blue-color
+                    );
+
+                    span{
+                        color: a.$orange-color;
+                    }
+                }
+
+                p{
+                    margin-top: 15px;
+                    text-align: center;
+                    @include a.text-style(
+                        400,
+                        15px,
+                        30px,
+                        a.$lightblack-color
+                    );
+                }
+            }
+
+            .card-wrapper{
+                // margin: 60px 15px 0 15px;
+                margin: 0 15px;
+
+                .card-item{
+                    margin-top: 60px;
+                    // min-height: 13rem;
+                    width: 100%;
+                    box-shadow: 0px 10px 60px rgba(38, 45, 118, 0.08);
+                    border-radius: 10px;
+                    position: relative;
+
+                    img{
+                        width: 75px;
+                        height: 75px;
+                        position: absolute;
+                        left: 50%;
+                        transform: translate(-50%);
+                        top: -40px;
+                    }
+
+                    h1{
+                        padding-top: 87px;
+                        width: 235px;
+                        margin: 0 auto;
+                        text-align: center;
+                        @include a.text-style(
+                            500,
+                            1.3rem,
+                            35px,
+                            a.$blue-color
+                        );
+
+                        .br-card-item-3{
+                            display: none;
+                        }
+                    }
+
+                    p{
+                        width: 260px;
+                        margin: 0 auto;
+                        text-align: center;
+                        padding-bottom: 50px;
+                        padding-top: 20px;
+                        @include a.text-style(
+                            400,
+                            14px,
+                            25px,
+                            a.$lightblack-color
+                        );
+                    }
+                }
+            }
+        }
+    }
+
+    // RESPONSIVE BREAKPOINTS
+    @media (min-width: 48rem){
+        .container{
+            padding: 0 70px;
+
+            .wrapper{
+                .title{
+                    h1{
+                        font-size: 23px;
+                    }
+
+                    p{
+                        font-size: 15px;
+                        width: 467px;
+                        margin: 20px auto 20px auto;
+                    }
+                }
+
+                .card-wrapper{
+                    // @include a.complex-flex();
+                    column-gap: 40px;
+                    row-gap: 10px;
+                    width: 676px;
+                    // flex-wrap: wrap;
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+
+                    .card-item{
+                        grid-column: span 2;
+                    }
+
+                    .card-item:nth-child(3){
+                        grid-column: 2 / 4;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width: 68rem) {
+        .container{
+            .wrapper{
+                .title{
+                    h1{
+                        font-size: 35px;
+                    }
+
+                    p{
+                        font-size: 18px;
+                        line-height: 35px;
+                        width: 629px;
+                    }
+                }
+
+                .card-wrapper{
+                    display: flex;
+                    width: 100%;
+
+                    .card-item{
+                        width: 340px;
+
+                        h1{
+                            .br-card-item-3{
+                                display: block;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+    // END RESPONSIVE BREAKPOINTS
+}
+// END CLOUD SOFTWARE

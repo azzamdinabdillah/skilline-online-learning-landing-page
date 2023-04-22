@@ -1,4 +1,4 @@
-@mixin text-style($fontWeight, $fontSize, $lineHeight, $color, $fontFamily: 'Poppins' sans-serif){
+@mixin text-style($fontWeight, $fontSize, $lineHeight, $color, $fontFamily: 'Poppins'){
     font-weight: $fontWeight;
     font-size: $fontSize;
     line-height: $lineHeight;
@@ -8,6 +8,13 @@
 
 @mixin simple-flex($gap: 0, $alignItems: center){
     display: flex;
+    align-items: $alignItems;
+    gap: $gap;
+}
+
+@mixin complex-flex($justifyContent: center, $alignItems: center, $gap: 0){
+    display: flex;
+    justify-content: $justifyContent;
     align-items: $alignItems;
     gap: $gap;
 }

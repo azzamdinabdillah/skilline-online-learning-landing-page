@@ -160,7 +160,7 @@
   height: 80px;
 }
 .hero-section .container .hero-text {
-  padding: 0 15px;
+  padding: 0 20px;
   margin-top: 20px;
 }
 .hero-section .container .hero-text h1 {
@@ -169,7 +169,7 @@
   font-size: clamp(1.9rem, 2.5vw + 1rem, 54px);
   line-height: 43px;
   color: #2F327D;
-  font-family: "Poppins" sans-serif;
+  font-family: "Poppins";
 }
 .hero-section .container .hero-text h1 span {
   color: #F48C06;
@@ -198,7 +198,7 @@
   font-size: 13px;
   line-height: 20px;
   color: white;
-  font-family: "Poppins" sans-serif;
+  font-family: "Poppins";
 }
 .hero-section .container .hero-text .button-hero-text div {
   display: flex;
@@ -215,7 +215,7 @@
   font-size: 13px;
   line-height: 20px;
   color: #252641;
-  font-family: "Poppins" sans-serif;
+  font-family: "Poppins";
 }
 .hero-section .container .hero-svg {
   width: 100vw;
@@ -232,7 +232,7 @@
     justify-content: center;
   }
   .hero-section .container .hero-img {
-    overflow: visible;
+    overflow: hidden;
     width: 350px;
   }
   .hero-section .container .hero-img .assisted-student {
@@ -289,7 +289,7 @@
   .hero-section .container .hero-img .user-experience {
     transform: scale(1.5);
     top: 366px;
-    left: -144px;
+    left: -104px;
   }
   .hero-section .container .hero-img .congratulations {
     transform: scale(1.4);
@@ -308,17 +308,17 @@
     line-height: 73px;
   }
   .hero-section .container .hero-text .p-hero-text {
-    margin-top: 34px;
-    font-size: 24px;
-    max-width: 461px;
+    margin-top: 7px;
+    font-size: 22px;
+    max-width: 503px;
     line-height: 40px;
   }
   .hero-section .container .hero-text .button-hero-text {
-    margin-top: 52px;
+    margin-top: 31px;
   }
   .hero-section .container .hero-text .button-hero-text button {
-    font-size: 24px;
-    padding: 22px 38px;
+    font-size: 18px;
+    padding: 18px 31px;
   }
   .hero-section .container .hero-svg {
     overflow: hidden;
@@ -331,6 +331,186 @@
   }
   .hero-section .container .hero-svg .path {
     width: 50% !important;
+  }
+}
+
+.trusted-company {
+  margin-top: 20px;
+}
+.trusted-company .container {
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  padding: 0 20px;
+}
+.trusted-company .container .wrapper h1 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 44px;
+  color: #696984;
+  font-family: "Poppins";
+}
+.trusted-company .container .wrapper .company-image {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  place-items: center;
+  margin-top: 16px;
+}
+.trusted-company .container .wrapper .company-image img {
+  grid-column: span 1;
+  width: 80px;
+}
+@media (min-width: 48rem) {
+  .trusted-company .container .wrapper h1 {
+    font-size: 13px;
+  }
+  .trusted-company .container .wrapper .company-image {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 27px;
+    margin-top: 20px;
+  }
+}
+@media (min-width: 64rem) {
+  .trusted-company .container {
+    min-height: 300px;
+  }
+  .trusted-company .container .wrapper h1 {
+    font-size: 23px;
+  }
+  .trusted-company .container .wrapper .company-image {
+    gap: 50px;
+    margin-top: 30px;
+  }
+  .trusted-company .container .wrapper .company-image img {
+    width: 120px;
+  }
+}
+
+.cloud-software {
+  padding-bottom: 200px;
+  margin-top: 20px;
+}
+.cloud-software .container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  padding: 0 25px;
+}
+.cloud-software .container .wrapper .title h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: inherit;
+  color: #2F327D;
+  font-family: "Poppins";
+}
+.cloud-software .container .wrapper .title h1 span {
+  color: #F48C06;
+}
+.cloud-software .container .wrapper .title p {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  color: #696984;
+  font-family: "Poppins";
+}
+.cloud-software .container .wrapper .card-wrapper {
+  margin: 0 15px;
+}
+.cloud-software .container .wrapper .card-wrapper .card-item {
+  margin-top: 60px;
+  width: 100%;
+  box-shadow: 0px 10px 60px rgba(38, 45, 118, 0.08);
+  border-radius: 10px;
+  position: relative;
+}
+.cloud-software .container .wrapper .card-wrapper .card-item img {
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: -40px;
+}
+.cloud-software .container .wrapper .card-wrapper .card-item h1 {
+  padding-top: 87px;
+  width: 235px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 35px;
+  color: #2F327D;
+  font-family: "Poppins";
+}
+.cloud-software .container .wrapper .card-wrapper .card-item h1 .br-card-item-3 {
+  display: none;
+}
+.cloud-software .container .wrapper .card-wrapper .card-item p {
+  width: 260px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  color: #696984;
+  font-family: "Poppins";
+}
+@media (min-width: 48rem) {
+  .cloud-software .container {
+    padding: 0 70px;
+  }
+  .cloud-software .container .wrapper .title h1 {
+    font-size: 23px;
+  }
+  .cloud-software .container .wrapper .title p {
+    font-size: 15px;
+    width: 467px;
+    margin: 20px auto 20px auto;
+  }
+  .cloud-software .container .wrapper .card-wrapper {
+    column-gap: 40px;
+    row-gap: 10px;
+    width: 676px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .cloud-software .container .wrapper .card-wrapper .card-item {
+    grid-column: span 2;
+  }
+  .cloud-software .container .wrapper .card-wrapper .card-item:nth-child(3) {
+    grid-column: 2/4;
+  }
+}
+@media (min-width: 68rem) {
+  .cloud-software .container .wrapper .title h1 {
+    font-size: 35px;
+  }
+  .cloud-software .container .wrapper .title p {
+    font-size: 18px;
+    line-height: 35px;
+    width: 629px;
+  }
+  .cloud-software .container .wrapper .card-wrapper {
+    display: flex;
+    width: 100%;
+  }
+  .cloud-software .container .wrapper .card-wrapper .card-item {
+    width: 340px;
+  }
+  .cloud-software .container .wrapper .card-wrapper .card-item h1 .br-card-item-3 {
+    display: block;
   }
 }
 
